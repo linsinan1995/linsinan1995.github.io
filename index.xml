@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lin Sinan&#39;s Blog</title>
-    <link>www.lnan95.cn/</link>
+    <link>/</link>
     <description>Recent content on Lin Sinan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="www.lnan95.cn/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo Tutorial</title>
-      <link>www.lnan95.cn/posts/hugo/</link>
+      <link>/posts/hugo/</link>
       <pubDate>Sat, 30 Jan 2021 22:43:13 +0200</pubDate>
       
-      <guid>www.lnan95.cn/posts/hugo/</guid>
+      <guid>/posts/hugo/</guid>
       <description>1. Quick start install hugo
 sudo apt install hugo 2.1. Create a new site hugo new site myBlog cd myBlog 2.2.Add a theme git init git submodule add https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git themes/minimal-bootstrap-hugo-theme rm config.toml cp themes/minimal-bootstrap-hugo-theme/exampleSite/config.toml config.toml 2.3.Post your first article command hugo new posts/xxx.md will generate a xxx.md file in the directory content/posts/
 hugo new posts/my-first-post.md 2.4.Add a tag for your posts add tags: [&amp;quot;tutorial&amp;quot;] in between two --- at the top of your .</description>
@@ -24,10 +24,10 @@ hugo new posts/my-first-post.md 2.4.Add a tag for your posts add tags: [&amp;quo
     
     <item>
       <title>About</title>
-      <link>www.lnan95.cn/about/</link>
+      <link>/about/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>www.lnan95.cn/about/</guid>
+      <guid>/about/</guid>
       <description>Hi, here is Lin Sinan (林思南), a student in Statistics. master student in Data Science. I right now live in Espoo, Finland. Looking for internships/full-time jobs among gcc backend development, C++ software development and machine learning related positions.
 Github page: https://github.com/linsinan1995</description>
     </item>

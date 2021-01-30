@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>www.lnan95.cn/posts/hugo/</loc>
+    <loc>/posts/hugo/</loc>
     <lastmod>2021-01-30T22:43:13+02:00</lastmod>
   </url>
   
   <url>
-    <loc>www.lnan95.cn/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-01-30T22:43:13+02:00</lastmod>
   </url>
   
   <url>
-    <loc>www.lnan95.cn/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2021-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>www.lnan95.cn/</loc>
+    <loc>/</loc>
     <lastmod>2021-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>www.lnan95.cn/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>

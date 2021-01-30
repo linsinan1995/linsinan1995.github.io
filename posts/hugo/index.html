@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.68.3" />
+
+  
+  <meta name="description" content="Some description">
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://example.com/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://example.com/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://example.com/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="https://example.com/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="https://example.com/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <link rel="stylesheet" href="https://example.com/css/bootstrap.min.css" />
+
+  
+  <title>Hugo Tutorial | Some Title</title>
+  
+
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+code {
+  padding: 2px 4px;
+  color: inherit; 
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+
+
+blockquote,
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1em;
+  border-left: 5px solid #6c757d;
+}
+
+</style>
+</head>
+
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    
+    <a href="/">Posts</a>
+    
+    <a href="/tags/">Tags</a>
+    
+    <a href="/about/">About</a>
+    
+    <a href="/index.xml">RSS</a>
+    
+  </div>
+</nav>
+  
+  <div class="container">
+    <article>
+      <h1>Hugo Tutorial</h1>
+<h1 id="1-quick-start">1. Quick start</h1>
+<p>install hugo</p>
+<pre><code>sudo apt install hugo
+</code></pre><h2 id="21-create-a-new-site">2.1. Create a new site</h2>
+<pre><code>hugo new site myBlog
+cd myBlog
+</code></pre><h2 id="22add-a-theme">2.2.Add a theme</h2>
+<pre><code>git init
+git submodule add https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme.git themes/minimal-bootstrap-hugo-theme
+rm config.toml
+cp themes/minimal-bootstrap-hugo-theme/exampleSite/config.toml config.toml
+</code></pre><h2 id="23post-your-first-article">2.3.Post your first article</h2>
+<p>command hugo new <code>posts/xxx.md</code> will generate a xxx.md file in the directory <code>content/posts/</code></p>
+<pre><code>hugo new posts/my-first-post.md
+</code></pre><h2 id="24add-a-tag-for-your-posts">2.4.Add a tag for your posts</h2>
+<p>add <code>tags: [&quot;tutorial&quot;]</code> in between two <code>---</code> at the top of your <code>.md</code> file.</p>
+<h1 id="3create-empty-lines">3.Create empty lines</h1>
+<p><code>&lt;br&gt;</code></p>
+<h1 id="4add-images">4.Add images</h1>
+<p>create an empty directory <code>img</code> in <code>./content/</code>, and put images in this dir.</p>
+<p>then you can user <code>![Cap d'Antibes](/img/cap_dAntibes.jpg)</code> to add images.</p>
+<p>n.b. directory link starts with /</p>
+<h1 id="5deploy-on-github">5.Deploy on Github</h1>
+<p>Now, let&rsquo;s test it in the browser! paramater <code>-D</code> will generate static pages based on your edits.</p>
+<pre><code>hugo server -D
+</code></pre><p>Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false.</p>
+<h2 id="51github-page">5.1.Github page</h2>
+<ul>
+<li>
+<p>1.Create an empty repo named username.github.io</p>
+</li>
+<li>
+<p>2.Enter directory</p>
+</li>
+<li>
+<p>3.Initalize your git and make it connect to remote repo</p>
+</li>
+</ul>
+<p>n.b. only push files in <code>public/</code>.</p>
+<pre><code>hugo -D
+cd public
+git init
+git add .
+git commit -m hello
+
+git remote add origin your repo's SSH(git@...)
+git push -u origin master
+</code></pre>
+    </article>
+  </div>
+
+  
+  
+  
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-123456789-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+
+  
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#216942",
+      "text": "#b2d192"
+    },
+    "button": {
+      "background": "#afed71"
+    }
+  }
+})});
+</script>
+
+</body>
+
+</html>
